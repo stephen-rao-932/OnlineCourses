@@ -1,9 +1,13 @@
 package co.raogroup.onlinecourses.Activity;
 
+import android.content.Context;
+import android.graphics.Color;
 import android.os.Bundle;
+import android.view.Window;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -22,7 +26,8 @@ public class CourseListActivity extends AppCompatActivity {
     EdgeToEdge.enable(this);
     setContentView(R.layout.activity_course_list);
 
-    
+    Window window = getWindow();
+    window.setStatusBarColor(ContextCompat.getColor(this,R.color.black));
     initRecyclerView();
 
   }
