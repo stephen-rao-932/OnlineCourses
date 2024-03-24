@@ -1,4 +1,4 @@
-package co.raogroup.onlinecourses;
+package co.raogroup.onlinecourses.Activity;
 
 import android.content.Intent;
 import android.os.Bundle;

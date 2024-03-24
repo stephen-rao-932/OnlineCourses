@@ -1,5 +1,6 @@
-package co.raogroup.onlinecourses;
+package co.raogroup.onlinecourses.Activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -17,6 +18,9 @@ public class Main_Screen extends AppCompatActivity {
     setContentView(binding.getRoot());
 
 
+    binding.seeAll.setOnClickListener(v -> {
+      startActivity(new Intent(Main_Screen.this,CourseListActivity.class));
+    });
 
 
   }
