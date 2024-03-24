@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
     binding.imageView5.setOnClickListener(v -> {
 
       startActivity(new Intent(MainActivity.this, Main_Screen.class));
+      finish();
 
     });
 
